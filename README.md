@@ -28,7 +28,7 @@ GUI development, encrypted local storage, and external service integration.
 
 ## Screenshots
 
-### Login Screen
+### Keylogger UI
 
 ![Login Screen](screenshots/Kelogger_UI.png)
 
