@@ -1,0 +1,125 @@
+=========================================================
+          Security Monitoring & Input Analysis Tool
+=========================================================
+
+Contributors:
+Yahav Gueta
+Tehila Atedgi
+Tal Ofir
+
+1. Project Overview
+---------------------------------------------------------
+This academic project was developed as part of a cybersecurity
+and software engineering study framework.
+
+The system demonstrates event monitoring, user input analysis,
+and real-time activity reporting techniques in a controlled
+educational environment.
+
+The application collects keyboard and user interaction events,
+displays them through a graphical interface, and records
+relevant information for later analysis.
+
+The project was designed to demonstrate concepts such as:
+- Event-driven programming
+- Input monitoring
+- Secure data storage
+- User activity analysis
+- External service integration
+- Graphical User Interface (GUI) development
+
+2. Technologies Used
+---------------------------------------------------------
+Programming Language:
+- Python
+
+Libraries:
+- pynput          : Keyboard event monitoring
+- pygetwindow     : Active window identification
+- pyperclip       : Clipboard interaction analysis
+- tkinter         : Graphical User Interface
+- cryptography    : Secure data encryption
+
+3. Installation
+---------------------------------------------------------
+Required packages:
+
+pip install pynput pygetwindow pyperclip cryptography
+
+4. Running the Application
+---------------------------------------------------------
+Prerequisites:
+- Python 3.10 or later
+- All required packages installed
+
+Setup:
+
+    1. Install dependencies:
+
+       pip install -r requirements.txt
+
+    2. Copy the configuration template:
+
+       .env.example  ->  .env
+
+    3. Edit the .env file and provide your own values:
+
+       TELEGRAM_TOKEN=YOUR_BOT_TOKEN
+       TELEGRAM_CHAT_ID=YOUR_CHAT_ID
+    ENCRYPTION_KEY=YOUR_ENCRYPTION_KEY
+
+    4. Launch the application:
+
+       python script.py
+
+    The graphical monitoring interface will start automatically.
+
+    Shutdown Options:
+    - Press the ESC key
+    - Click the "STOP & EXIT" button
+
+    Security Notes:
+    - API credentials are loaded from environment variables.
+    - Sensitive data is encrypted before local storage.
+    - Configuration files containing secrets should never be
+      uploaded to source control repositories.
+
+
+5. Features
+---------------------------------------------------------
+- Real-time keyboard event monitoring
+- Active window identification
+- Clipboard activity detection
+- Field navigation analysis using TAB events
+- Copy/Paste activity recognition
+- Graphical activity visualization
+- Secure encrypted storage of collected data
+- Optional Telegram notification integration
+
+6. Output Files
+---------------------------------------------------------
+Encrypted activity records are stored locally for analysis.
+
+The collected information is encrypted before being written
+to disk in order to protect stored data from unauthorized access.
+
+7. Security Considerations
+---------------------------------------------------------
+Sensitive configuration values such as API tokens and
+encryption keys are not stored directly in the source code.
+
+The project uses environment variables (.env) for secure
+configuration management.
+
+Collected records are encrypted before storage using
+symmetric encryption techniques.
+
+8. Educational Purpose
+---------------------------------------------------------
+This project was created exclusively for educational,
+research, and demonstration purposes within an academic
+environment.
+
+Its goal is to demonstrate cybersecurity concepts,
+event monitoring mechanisms, secure storage practices,
+and software development principles.

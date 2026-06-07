@@ -1,0 +1,5 @@
+.env
+captured_passwords.txt
+all_keystrokes.txt
+__pycache__/
+*.pyc
