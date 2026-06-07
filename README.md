@@ -26,6 +26,12 @@ GUI development, encrypted local storage, and external service integration.
 - pyperclip
 - cryptography
 
+## Screenshots
+
+### Login Screen
+
+![Login Screen](screenshots/Kelogger_UI.png)
+
 ## Installation
 
 ```bash
